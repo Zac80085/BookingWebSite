@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Hotels</title>
+    <link rel = "stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!------------------------------------------------------------------------------------->
+    <style>
+body{
+    scroll-behavior: smooth;
+}
+
+.img{
+    overflow: auto;
+    white-space: nowrap;
+    padding: 3px;
+}
+
+.img img{
+    border: 3px #d1ffff solid;
+    border-radius: 15px;
+
+}
+  
+form label,
+form input,
+form select {
+    display: inline-block;
+    margin: 5px; 
+}
+
+.forms input {
+    vertical-align: middle;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+} 
+
+.forms{
+    text-align: center;
+    max-width: 98%;
+    margin: 0 auto;
+    padding: 15px 0px;
+    border-radius:13px ;
+    background-color:#313d44;
+    width: auto;
+    color:white;
+    justify-content: center;
+    display: flex;
+    flex: 1;
+    border: 1px white solid;
+
+
+}
+.form-groups {
+    display: inline-block;
+    padding: 2px;
+    margin: 2px;
+}
+.form-groups> label{
+    font-size: 20px;
+}
+
+#location,input[type="date"] {
+    padding: 10px 20px;
+    border: 1px black solid;
+    background-color:white;
+    color: black;
+    font-size: 17px;
+    text-align: center;
+    border-radius: 13px;
+
+}
+#location:hover{
+    background-color: #313d44;
+    color: white;
+    border: 1px white solid;
+
+
+}
+#rooms{
+    border-radius: 1px ;
+    padding: 10px 20px;
+    border: 1px black solid;
+    background-color:white;
+    color: black;
+    font-size: 17px;
+    text-align: center;
+    border-radius: 13px;
+
+}
+#rooms:hover{
+    background-color: #313d44;
+    color: white;
+    border: 1px white solid;
+
+}
+
+input#checkin, input#checkout{
+    margin-left: 0px;
+}
+
+
+input[type="submit"]{
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 23px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 15px 25px;
+    border: 1px black solid;
+    border-radius: 13px;
+    display: block;
+    margin: auto;
+    max-width: 25%;
+    margin-top: 15px;
+}
+
+input[type="submit"]:hover{
+    background-color: #7FDBFF;
+    border:1px white solid;
+}
+
+input[type="number"]{
+    background-color:white;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 70px;
+    border: 1px black solid;
+    border-radius: 13px;
+}
+
+#AboutUs{
+    margin: auto;
+    display: block;
+    text-align: left;
+    width: 95%;
+    color: white;
+    border:1px white solid;
+    padding: 10px 50px 50px 50px;
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 810px) {
+    .forms{
+        max-width: 100%;
+        flex-direction: column;
+
+    }
+    .form-groups{
+        display: block;
+        text-align: center;
+    }
+    input[type="submit"]{
+        max-width: 40%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .forms{
+        max-width: 100%;
+        flex-direction: column;
+
+    }
+    .form-groups{
+        display: block;
+        text-align: center;
+    }
+
+    .form-groups> label{
+        display: block;
+        margin: auto;
+
+    }
+    input[type="submit"]{
+        padding: 10px 20px;
+        font-size: 20px;
+
+    }
+    .img img{
+        width: 100%;
+        height: 40%;
+    }    
+}
+
+
+</style>
+<!------------------------------------------------------------------------------------->
+</head>
+<body>
+<header>
+    <p>
+    <h1>
+        <a href="Home.html"><img class="logo" src="Logo.png" alt="Logo" href="Home.html"></a>
+        World Hotels
+    </h1>    
+    </p>    
+  </header>
+
+<div class="navbar">
+    <a class = "active" href="Home.html">Home</a>
+    <a href="#AboutUs">About Us</a>
+    <a href="Contact.html">Contact</a>
+    <a href="LogIn.html">Log In</a>
+</div>
+    <h2 style="text-align: center;color: white;">Welcome to Our Hotels</h2>
+    <br>
+    <h3 style="text-align: center;color: white;">Where Your Dream Vacation Becomes Reality!</h4>
+    <br>
+    <div class="img">
+        <img  class = "img1" src="Hotel.jpg" alt="Forest"width="100%" height="20%">
+        <img class ="img2" src="Standard.jpeg" alt="Forest"width="100%" height="20%">
+        <img class ="img2" src="Family.jpeg" alt="Northern Lights"width="100%" height="20%">
+        <img class ="img2" src="Executive.jpeg" alt="Mountains"width="100%" height="20%">
+    </div>
+
+<div class = "forms">
+    <form action="BookingPage.html">
+            <div class="txt" style="text-align: center;"><h2>Where to? When?</h2></div>
+
+            <div class="form-groups">
+            <label for="checkin">Check-In:</label>
+            <input type="date" id="checkin" name="checkin" min="">
+            </div>
+        
+            <div class="form-groups">
+            <label for="checkout">Check-Out:</label>
+            <input type="date" id="checkout" name="checkout">
+            </div>
+
+            <div class="form-groups">
+            <label for="quantity" >No. of People:</label>
+            <input type="number"id="quantity" name="quantity" min="1" max="6">
+            </div>
+
+            <div class="form-groups">
+            <label for="Location">Locations:</label>
+            <select id="location" name="location">
+                <option value="Aberdeen">Aberdeen</option>
+                <option value="Belfast">Belfast</option>
+                <option value="Birmingham">Birmingham</option>
+                <option value="Bristol">Bristol</option>
+                <option value="Cardiff">Cardiff</option>
+                <option value="Edinburgh">Glasgow</option>
+                <option value="London">London</option>
+                <option value="Manchester">Manchester</option>
+                <option value="New Castle ">New Castle </option>
+                <option value="Norwich">Norwich</option>
+                <option value="Nottingham">Nottingham</option>
+                <option value="Birmingham">Birmingham</option>
+                <option value="Oxford">Oxford</option>
+                <option value="Plymouth">Plymouth</option>
+                <option value="Swansea">Swansea</option>
+                <option value="Bournemouth">Bournemouth</option>
+                <option value="Kent">Kent</option>
+            </select>
+            </div>
+
+            <div class="form-groups">
+            <label for="rooms">Rooms:</label>
+            <select id="rooms" name="rooms">
+            <option value="Select Suite">Select Suite</option>
+            <option value="Executive Suite">Executive Suite</option>
+            <option value="Family Suite">Family Suite</option>
+            <option value="Standard Suite">Standard Suite</option>
+            </select>
+            </div>
+
+            <br>
+        </div>
+            <input type="Submit" value="Book Now!">
+    </form>
+</div>
+
+<br>
+<br>
+<div id="AboutUs">
+    <h2 style="text-align: center;" >About Us</h2>
+    <br>
+    <h4 >Step into the world of luxury and unmatched hospitality with our esteemed chain of exquisite hotels spread across the enchanting tapestry of the United Kingdom. 
+        Our legacy of exceptional service and commitment to crafting unforgettable experiences defines each of our properties.
+        <br>
+        <br>
+        Nestled amidst the diverse landscapes of this beautiful country, from the bustling metropolises to the serene countryside, every hotel in our collection represents a unique fusion of opulence, comfort, and tailored experiences.
+        From the moment you step into our welcoming lobbies, you are embraced by a seamless blend of refined elegance and genuine warmth.
+        <br> 
+        <br>
+        Our commitment to curating an extraordinary stay is evident in every detail, from the meticulously designed rooms to the personalized service offered by our dedicated staff. 
+        Whether you seek the vibrant pulse of a city escape or the tranquil embrace of nature, our hotels stand as bastions of exceptional quality, ensuring that your stay exceeds every expectation.
+        <br>
+        <br>
+        
+        We invite you to immerse yourself in the sheer beauty and unparalleled hospitality that define our portfolio of hotels across the UK. 
+        Come, experience the epitome of luxury, where your comfort and satisfaction are not just our goals but our unwavering commitment.
+    </h3>
+</div>
+  
+
+<footer>
+    <div class="footer-content">
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p>Email: info@worldhotels.com</p>
+            <p>Phone: +44 07774415929</p>
+            <p>Headquarters: 123 Main Street, Dublin, Ireland</p>
+            <br>
+            <br>
+            <br>
+            <p>&copy; 2023 Hotel Booking. All rights reserved.</p>
+        </div>
+        <div class="fa-container">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+        </div>
+    </div>
+</footer>
+
+    
+</body>
+</html>

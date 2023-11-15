@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Account Registration</title>
+<style>
+label {
+  display: block;
+  margin-bottom: 6px; /* Adjust the margin as needed */
+  margin-left: 15%;
+}
+
+/* Add this to your Style.css file or within the <style> tag in the HTML */
+
+.container {
+  padding: 16px;
+  border: 1px solid white;
+  border-radius: 5px; 
+  width: 50%;
+  display: block;
+  margin: auto;
+  background-color: #31466a;
+  font-size: 18px;
+  color: white;
+
+}
+
+input[type=text], input[type=password] {
+  width: 70%;
+  padding: 10px;
+  margin: 8px auto;
+  display: block;
+  border: 1px solid black;
+  border-radius: 4px; 
+  box-sizing: border-box;
+}
+
+button {
+  background-color: black;
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  padding: 14px 20px;
+  margin: 0 auto;
+  border: 1px solid black; 
+  border-radius: 4px; 
+  cursor: pointer;
+  width: 70%;
+  display: block;
+  margin-top: 30px;
+}
+
+button:hover {
+    color: black;
+    background-color: #7FDBFF;
+    border: 1px white solid;
+    
+}
+
+.PageHeader{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 20px;
+  margin-bottom: 40px;
+  background-color: black;
+  color: white;
+  border: 1px white solid;
+}
+
+.cancelbtn:hover{
+  background-color: red;
+  color: white;
+  border-radius: 1px solid white;
+
+}
+
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+span.psw{
+  float: right;
+}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 819px) {
+    span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 50%;
+  }
+  .container{
+    width: 80%;
+  }
+}
+</style>
+</head>
+<body>
+    <header>
+      <p>
+        <h1>
+            <a href="Home.html"><img class="logo" src="Logo.png" alt="Logo" href="Home.html"></a>
+            World Hotels
+        </h1>
+        </p>
+          </header>
+    
+    <div class="navbar">
+        <a href="Home.html">Home</a>
+        <a href="Home.html#AboutUs">About Us</a>
+        <a href="Contact.html">Contact</a>
+        <a class = "active"href="LogIn.html">Log In</a>
+    </div>
+<!----------------------------------------------------------->
+
+
+    <form action="/action_page.php" method="post">
+        <div class="PageHeader">
+            <h2 style="color: white;">Account Registration</h2>
+        </div>
+
+    <div class="container">
+    <label  for="uname"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email Address" name="uname" required>
+
+    <label  for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label  for="uname"><b>Confirm Password</b></label>
+    <input type="text" placeholder="Confirm Password" name="uname" required>
+        
+    <button type="submit">Submit</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+    <br>
+
+    <p style="text-align: center;">By creating an account you agree to our <a href="T&C.html" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <button type="button" class="cancelbtn">Cancel</button>
+
+  </div>
+</form>
+
+
+<footer>
+  <div class="footer-content">
+      <div class="contact-info">
+          <h3>Contact Us</h3>
+          <p>Email: info@worldhotels.com</p>
+          <p>Phone: +44 07774415929</p>
+          <p>Headquarters: 123 Main Street, Dublin, Ireland</p>
+          <br>
+          <br>
+          <br>
+          <p>&copy; 2023 Hotel Booking. All rights reserved.</p>
+      </div>
+      <div class="fa-container">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-google"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+      </div>
+  </div>
+</footer>
+
+
+
+
+</body>
+</html>

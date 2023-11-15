@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  margin: 3px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+  margin: 0;
+  padding: 0px;
+  background-color: #001F3F;
+  display: block;
+}
+
+header {
+  padding: 5px;
+  text-align: center;
+  background:#31466a;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 3px;
+  border-radius: 15px;
+  border: 1px white solid;
+}
+
+h1 {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.logo {
+width:45px;
+margin-right: 10px;
+display: block;
+border: #1d1c1c 2px solid;
+}
+
+.navbar {
+  display: flex;
+  background-color: #31466a;
+  justify-content: right;
+  margin-bottom: 1%;
+  border: white solid 1px;
+  border-radius: 15px;
+
+}
+
+.navbar a {
+  color:white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  border-right: 1px black solid;
+  border-left: 1px black solid;
+  border-radius:10px ;
+}
+
+.navbar a:hover, a.active{
+  background-color: #001F3F;
+  color: white;
+}
+
+a.active:hover{
+  background:white;
+  transition: 0s;
+  color: black;
+}
+
+
+footer {
+  background-color:#31466a;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 5%;
+  border-radius: 15px;
+  border: 1px white solid;
+  
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #fffefb;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-info h3 {
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin: 5px;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 25px;
+  width: 35px;
+  border-radius:15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+
+@media screen and (max-width: 810px) {
+  .navbar{
+    flex-direction: column;
+    border: 0px;
+    border: white solid 3px;
+
+    
+  }
+  .navbar a {
+      border-bottom:black solid 0.5px;
+      border-left: 0px;
+      border-right: 0px;
+  }
+  header{
+      font-size: 18px;
+  }
+  .logo{
+    width: 30px;
+  }
+  footer{
+    height: 5%;
+    max-width: 100%;
+  }
+  .contact-info {
+    padding: 10px;
+  }
+  .contact-info h3 {
+    font-size: 18px;
+  }
+
+}
